@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
     @RequestMapping(value ="/index")
     public String Index(){
-        return "/index";
+        return "login/index";
+    }
+
+    @RequestMapping(value="/registry")
+    public String Registry(){
+        return "login/registry";
     }
 
 }
